@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/1000px-F_icon.svg.png" type="image/x-icon">
+        <title>Войдите на Facebook | </title>
+        <style>
+            header{
+                background-color: rgb(65,94,155);
+                height: 80px;
+                border-bottom: 2px solid rgb(19, 55, 131);
+            }
+            .firstDiv{
+                width: 992px;
+                margin: 0 auto;
+                padding-top: 20px;
+            }
+            .secondDiv{
+                width: 1000px;
+                margin: 0 auto;
+            }
+            body{
+                background: rgb(237, 239, 247);
+            }
+            .facebook-logo{
+                float: left;
+                width: 50%;
+            }
+            .facebook-logIN{
+                width: 50%;
+                float: left;
+            }
+            .firstDiv label{
+                color: white;
+            }
+            .facebook-email{
+                font-size: 14px;
+                float: left;
+            } 
+            .facebook-email label{
+                padding-bottom: 10px;
+            }
+            .facebook-password{
+                float: left;
+                font-size: 14px;
+                padding-left: 15px;
+            }
+            .facebook-password label{
+                padding-bottom: 10px;
+            }
+            .facebook-password a{
+                color: rgb(140, 158, 219);
+            }
+            .facebook-loginButton{
+                padding-left: 450px;
+                padding-top: 15px;
+            }
+            .facebook-loginButton input{
+                border: 1px solid rgb(41, 72, 125);
+                border-radius: 2px;
+                color: white;
+                background: rgb(71, 98, 178);
+                height: 23px;
+            }
+            .connections{
+                margin-top: 50px;
+                float: left;
+                width: 55%;
+            }
+            .connections p{
+                font-size: 25px;
+                font-weight: bold;
+                color: rgb(34, 44, 81);    
+            }
+            .account{
+                width: 45%;
+                float: left;
+            }
+            .create-account h2{
+                font-size: 40px;
+            }
+            .create-account .free{
+                font-size: 20px;
+                margin-top: 15px;
+                margin-bottom: 20px;
+            }
+            .account input[type="text"]{
+                margin-bottom: 15px;
+                padding: 10px;
+                font-size: 16px;
+                border-radius: 5px;
+            }
+            .account input[type="password"]{
+                padding: 10px;
+                font-size: 16px;
+                margin-bottom: 15px;
+                border-radius: 5px;
+            }
+            .account input[type="radio"]{
+                margin-bottom: 20px;
+                margin-top: 15px;
+                border-radius: 20px;
+            }
+            .account input[type="date"]{
+                margin-bottom: 10px;
+                margin-top: 10px;
+                font-size: 14px;
+            }
+            .account input[type="submit"]{
+                height: 30px;
+                width: 200px;
+                font-weight: solid;
+                background: rgb(101, 169, 83);
+                border: 1px solid rgb(59, 110, 34);
+                font-size: 23px;
+                color: rgb(255, 255, 255);
+                margin-bottom: 15px;
+                margin-bottom: 15px;
+                border-radius: 5px;
+            }
+            .account label{
+                font-size: 20px;
+                font-weight: medium;
+                margin-bottom: 15px;
+            }
+            .account .clicking{
+                color: rgb(119, 119, 122);
+                font-size: 12px;
+            }
+            .account .pageForStars{
+                color: rgb(61, 61, 41);
+                font-size: 16px;
+                font-weight: bold;
+                margin-top: 20px;
+            }
+            .account .emailOrNumber, .newPassword{
+                width: 84%;
+            }
+        </style>
+        
+        
+    </head>
+    <body>
+        <header>
+        <div class = "firstDiv">
+            <div class = "facebook-logo">
+            <a href = "https://www.facebook.com/"><img src = "facebook-logo.png" alt = "Facebook-logo" width = "200" /></a>
+            </div><!--facebook-logo-->
+            <div class = "facebook-logIN">
+                <div class = "facebook-email">
+                    <label>Электронный адрес или номер телефона</label><br>
+                    <input type = "text" name="email" />
+                </div><!--facebook-email-->
+                
+                <div class = "facebook-password">
+                    <label>Пароль</label><br>
+                    <input type = "password" name="password" /><br>
+                    <a href="https://www.facebook.com/login/identify/?ctx=recover&ars=royal_blue_bar">Забыли аккаунт?</a>
+                </div><!--facebook-password-->
+
+                <div class = "facebook-loginButton">
+                    <input type = "submit" value="Вход" />
+                </div><!--facebook-loginButton-->
+
+            </div><!--facebook-logIN-->
+        </div><!--firstDiv-->
+        </header>
+
+        <div class = "secondDiv">
+            <div class = "connections">
+                <p>Facebook помогает вам всегда оставаться на связи и общаться со своими знакомыми.</p>
+                <img src = "https://static.xx.fbcdn.net/rsrc.php/v3/yc/r/GwFs3_KxNjS.png" alt = "connctions" />
+            </div><!--connections-->
+            
+            <div class = "create-account">
+                <h2>Регистрация</h2>
+                <p class = "free">Это бесплатно и всегда будет бесплатнo.</p>
+                <div class = "account">
+                    <form>
+                        <input type = "text" name = "first-name" placeholder= "Имя">
+                        <input type = "text" name = "surname" placeholder = "Фамилия"><br>
+                        <input type = "text" name = "emailOrNumber" class = "emailOrNumber" placeholder = "Номер мобильного телефона или эл. адрес"><br>
+                        <input type = "password" name = "newPassword" class = "newPassword" placeholder = "Новый пароль"><br>
+                        <label>Дата рождения</label><br>
+                        <input type = "date" name = "date"><span>   Зачем указывать дату рождения?</span><br>
+                        <input type = "radio" name = "gender">
+                        <label> Женщина </label>
+                        <input type = "radio" name = "gender">
+                        <label> Мужчина </label><br>
+
+                        <span class="clicking">Нажимая кнопку регистрация, вы принимаете <a href = "https://www.facebook.com/legal/terms/update" target="_blank"> Условия</a>,<a href = "https://www.facebook.com/about/privacy/update" target="_blank"> Политику использования данных </a> и <a href = "https://www.facebook.com/policies/cookies/" target= "_blank"> Политику в отношении файлов cookie</a>.
+                        Вы можете получать от нас SMS-уведомления, отказаться от которых можно в любой момент.</span><br>
+                        <br>
+                        <input type="submit" value="Регистрация"><br>
+                        <span class="pageForStars"><a href = "https://www.facebook.com/pages/creation/?ref_type=registration_form"> Создать Страницу</a> знаменитости, музыкальной группы или компании.</span><br>
+                    </form>
+                </div><!--account-->
+            </div><!--create-account-->
+        </div><!--secondDiv-->
+    </body>
+</html>
