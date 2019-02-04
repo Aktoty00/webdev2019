@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1024px-Instagram_logo_2016.svg.png" type="image/x-icon">
+        <title>Instagram</title>
+        <style>
+            body{
+                background: rgb(249, 249, 249);
+            }
+            .firstDiv{
+                float: left;
+                position: absolute;
+            }
+            .firstDiv img{
+                padding-top: 126px;
+                padding-left: 333px;
+            }
+            .secondDiv{
+                position: absolute;
+                width: 313px;
+                margin: 40px 0px 0px 690px;
+                float: left;
+                background: white;
+                border: 1px solid rgb(165, 171, 183);
+            }
+            .secondDiv img{
+                padding-top: 27px;
+                padding-left: 74px;                
+            }
+            .secondDiv p{
+                margin-top: 0px;
+                font-size: 18px;
+                padding: 10px 28px 17px 28px;
+                color: rgb(136, 141, 150);
+                font-weight: bold;
+            }
+            .instagram-loginButton{
+                padding: 0px 36px 0px 30px;
+            }
+            .instagram-loginButton button{
+                height: 33px;
+                width: 255px;
+                background: rgb(15, 116, 223);
+                border-radius: 5px;
+                font-size: 14px;
+                font-weight: bold;
+                color: rgb(255, 255, 255);  
+            }
+            .account button{
+                height: 33px;
+                width: 260px;
+                background: rgb(15, 116, 223);
+                margin: 10px 30px 20px 25px;
+                border-radius: 10px;
+                font-size: 13px;
+                font-weight: bold;
+                color: rgb(255, 255, 255);
+            }
+            .instagram-loginButton img{
+                padding: 0px 0px 0px 0px;
+                background: white;
+            }
+            .orLines{
+                position: relative;
+                top:30px;
+                height: 40px;
+                color: black;
+            }
+            .orLines p{
+                left: 115px;
+                position: relative;
+                top: -39px;
+                font-size: 14px;
+            }
+            .orLines .firstLine{
+                width: 100px;
+                left: -70px;
+                top: -12px;
+                position: relative;
+            }
+            .orLines .secondLine{
+                width: 100px;
+                top: -79px;
+                left: 76px;
+                position: relative;
+            }
+            .account input{
+                width: 235px;
+                height: 10px;
+                margin-top: 5px;
+                margin-left: 28px;
+                background: rgb(249, 249, 249);
+                padding: 10px;
+                font-size: 13px;
+                border-radius: 3px;
+                border: 1px solid rgb(205, 201, 203);
+            }
+            .account .clicking{
+                width: 250px;
+                color: rgb(182, 180, 180);
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;                
+                padding: 0px 50px 10px 35px;
+                margin: 0px 40px 0px 0px;
+                font-size: 13px;
+            }
+            .thirdDiv{
+                width: 313px;
+                position: absolute;
+                height: 43px;
+                text-align: center;
+                padding-top: 25px;
+                margin: 660px 0px 0px 690px;
+                float: left;
+                background: white;
+                border: 1px solid rgb(165, 171, 183);
+            }
+            .forthDiv{
+                width: 700px;
+                position: absolute;
+                height: 100px;
+                padding-top: 5px;
+                margin: 740px 0px 0px 670px;
+                float: left;
+            }
+            .forthDiv p{
+                font-size: 18px;
+                padding-left: 80px;
+            }
+        </style>
+        
+        
+    </head>
+    <body>
+        <div class = "firstDiv">
+            <img src = "instaTelPhoto.jpg" alt="instaTelPhoto" width="335" height="520">
+        </div><!--firstDiv-->
+
+        <div class = "secondDiv">
+            <img src = "https://s14.stc.all.kpcdn.net/img/instagram_logo.svg" alt = "instalogo" width="166" height="48">
+            <p align="center">Зарегистрируйтесь, чтобы смотреть фото и видео ваших друзей.</p>
+            <div class = "instagram-loginButton">
+                <a href="https://www.facebook.com/"><button type="submit"><img src="face-for-insta2.jpg" alt="face-for-insta" width="15" height="16"> Войти через Facebook</button></a>
+            </div><!--instagram-loginButton-->
+            <div class="orLines">
+                <hr class="firstLine">
+                <p>ИЛИ</p>
+                <hr class="secondLine">
+            </div><!--orLines-->
+            <div class="account">
+                <form>
+                    <input type = "text" name = "emailOrNumber" class = "emailOrNumber" placeholder = "Моб. телефон или эл. адрес"><br>
+                    <input type = "text" name = "name" placeholder= "Имя и фамилия">
+                    <input type = "text" name = "surname" placeholder = "Имя пользователя"><br>
+                    <input type = "password" name = "newPassword" class = "newPassword" placeholder = "Пароль"><br>
+                    <button type="submit">Регистрация</button>
+                    <p class="clicking">Регистрируясь, вы принимаете наши <a href = "https://help.instagram.com/581066165581870" target="_blank"> Условия</a>,<a href = "https://help.instagram.com/519522125107875" target="_blank"> Политику использования данных </a> и <a href = "https://help.instagram.com/1896641480634370?ref=ig" target= "_blank"> Политику в отношении файлов cookie</a>.</p><br>
+                </form>
+            </div><!--account/-->
+        </div><!--secondDiv-->
+        
+        <div class = "thirdDiv">
+            <span class="clicking">Есть аккаунт? <a href = "https://www.instagram.com/accounts/login/?source=auth_switcher"> Вход</a></span><br>
+        </div><!--thirdDiv-->
+        <div class = "forthDiv">
+            <p>Установите приложение.</p>
+            <a href="https://itunes.apple.com/app/instagram/id389801252?pt=428156&ct=igweb.signupPage.badge&mt=8&vt=lo" target="_blank"><img src="appstore.png" alt="appstore" width="125" height="40" /></a>
+            <a href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=utm_source%3Dinstagramweb%26utm_campaign%3DsignupPage%26ig_mid%3DXFSN3AALAAGT0Kt45iTWTAswaAqb%26utm_content%3Dlo%26utm_medium%3Dbadge" target="_blank"><img src="googleplay.png" alt="googleplay" width="125" height="40"></a>
+            <a href="https://www.microsoft.com/en-us/p/instagram/9nblggh5l9xt?activetab=pivot:overviewtab" target="_blank"><img src="microsoft.png" alt="microsoft.png" width="115" height="40"></a>
+        </div><!--forthDiv-->
+    </body>
+</html>
