@@ -191,7 +191,9 @@ venv.bak/
 .mypy_cache/
 
 bin/                
-include/            
-lib/                
+Include/            
+Lib/  
+Scripts/                
 .idea/
 pip-selfcheck.json
+psyvenv.cfg

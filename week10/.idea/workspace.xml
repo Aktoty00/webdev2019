@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51f90d90-109d-4b43-9865-8408d7dd3ef5" name="Default Changelist" comment="" />
+    <list default="true" id="51f90d90-109d-4b43-9865-8408d7dd3ef5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -9,12 +11,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project1/Proj1/Proj1/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="20" column="35" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="20" selection-end-column="35" />
+            <state relative-caret-position="323">
+              <caret line="20" column="35" selection-start-line="19" selection-start-column="36" selection-end-line="20" selection-end-column="35" />
               <folding>
                 <element signature="e#629#661#0" expanded="true" />
               </folding>
@@ -25,11 +27,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project1/Proj1/login/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="68">
+              <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -38,7 +37,7 @@
         <entry file="file://$PROJECT_DIR$/Project1/Proj1/login/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
-              <caret line="1" column="6" lean-forward="true" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+              <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -46,7 +45,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project2/Proj2/Proj2/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
+            <state relative-caret-position="323">
               <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
               <folding>
                 <element signature="e#629#661#0" expanded="true" />
@@ -113,57 +112,13 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="week10" type="b2602c69:ProjectViewProjectNode" />
-              <item name="week10" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="week10" type="b2602c69:ProjectViewProjectNode" />
-              <item name="week10" type="462c0819:PsiDirectoryNode" />
-              <item name="Project2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="week10" type="b2602c69:ProjectViewProjectNode" />
-              <item name="week10" type="462c0819:PsiDirectoryNode" />
-              <item name="Project2" type="462c0819:PsiDirectoryNode" />
-              <item name="Proj2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="week10" type="b2602c69:ProjectViewProjectNode" />
-              <item name="week10" type="462c0819:PsiDirectoryNode" />
-              <item name="Project2" type="462c0819:PsiDirectoryNode" />
-              <item name="Proj2" type="462c0819:PsiDirectoryNode" />
-              <item name="lyrics" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="week10" type="b2602c69:ProjectViewProjectNode" />
-              <item name="week10" type="462c0819:PsiDirectoryNode" />
-              <item name="Project2" type="462c0819:PsiDirectoryNode" />
-              <item name="Proj2" type="462c0819:PsiDirectoryNode" />
-              <item name="lyrics" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="week10" type="b2602c69:ProjectViewProjectNode" />
-              <item name="week10" type="462c0819:PsiDirectoryNode" />
-              <item name="Project2" type="462c0819:PsiDirectoryNode" />
-              <item name="Proj2" type="462c0819:PsiDirectoryNode" />
-              <item name="Proj2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="week10" type="b2602c69:ProjectViewProjectNode" />
-              <item name="week10" type="462c0819:PsiDirectoryNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../week11/todo_back" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -216,16 +171,14 @@
     <entry file="file://$PROJECT_DIR$/Project1/Proj1/login/apps.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project2/Proj2/lyrics/migrations/urls.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Project2/Proj2/lyrics/migrations/urls.py" />
     <entry file="file://$PROJECT_DIR$/Project1/Proj1/manage.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Project1/Proj1/Proj1/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="20" column="35" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="20" selection-end-column="35" />
+        <state relative-caret-position="323">
+          <caret line="20" column="35" selection-start-line="19" selection-start-column="36" selection-end-line="20" selection-end-column="35" />
           <folding>
             <element signature="e#629#661#0" expanded="true" />
           </folding>
@@ -234,24 +187,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Project1/Proj1/login/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Project1/Proj1/login/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="1" column="6" lean-forward="true" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Project2/Proj2/Proj2/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
+        <state relative-caret-position="323">
           <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
           <folding>
             <element signature="e#629#661#0" expanded="true" />
