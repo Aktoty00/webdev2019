@@ -14,9 +14,9 @@ export class ProviderService extends MainService{
  }
  getTaskLists(): Promise<TaskList[]>{
 
-   return this.get('http://localhost:8000/api/task_lists', {});
+   return this.get('http://127.0.0.1:8000/api/task_lists/', {});
  }
- getTasks(id: number) {
-  return this.get(`http://localhost:8000/api/task_lists/${id}/tasks/`, {});
+ getTasks(id: number): Promise<Task[]>{
+  return this.get(`http://127.0.0.1:8000/api/task_lists/${id}/tasks/`, {});
 }
 }

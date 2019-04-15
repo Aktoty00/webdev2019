@@ -1,12 +1,12 @@
 <div class = "main">
   <div>
     <h2>Task List:</h2><br>
-    <div *ngFor="let t of task_lists" (click) = "getListOfTasks(t)">{{t.id}} : {{t.name}}</div>
+    <div *ngFor="let a of task_lists" (click) = "getListOfTasks(t)"> {{a.id}} : {{a.name}}</div>
   </div>
+
   <div>
-      <h2>Tasks:</h2><br>
       <div *ngFor = "let t of tasks" class = "tasks">
-        <div><span> id0:</span> {{t.id}}</div>
+        <div><span> id:</span> {{t.id}} </div>
         <div><span> name: </span> {{t.name}}</div>
         <div><span> status: </span> {{t.status}}</div>
         <div><span> created at: </span> {{t.created_at}}</div>

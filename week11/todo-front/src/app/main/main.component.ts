@@ -20,7 +20,8 @@ export class MainComponent implements OnInit {
     });
   }
   getListOfTasks(task_list: TaskList) {
-    this.provider.getTasks(task_list.id).then(res => {this.tasks = res; });
+    this.provider.getTasks(task_list.id).then(res => {
+      this.tasks = res; 
+    });
   }
-
 }

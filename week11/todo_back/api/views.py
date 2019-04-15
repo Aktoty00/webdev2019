@@ -12,7 +12,7 @@ def t_lists(request):
     return  JsonResponse(data, safe=False)
 
 def task_lists_num(request, num):
-    task = TaskList.objects.get(id = num).to_json()
+    task = TaskList.objects.get(id=num).to_json()
     data = {
         'task': task
     }
