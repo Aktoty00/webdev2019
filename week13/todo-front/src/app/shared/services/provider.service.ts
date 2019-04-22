@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import { MainService } from './main.service';
 import { HttpClient } from '@angular/common/http';
-import { TaskList, Task } from '../models/models';
+import { TaskList, Task, IAuthResponse } from '../models/models';
+import { promise } from 'protractor';
 
 @Injectable({
   providedIn: 'root'
@@ -33,6 +34,19 @@ export class ProviderService extends MainService{
   createTaskList(name: any) : Promise<TaskList>{
     return this.post(`http://localhost:8000/api/task_lists/`, {
       name: name
+    });
+  }
+
+  auth(login: any, password: any) : Promise<IAuthResponse>{
+    return this.post('http://localhost:8000/api/login/',{
+      username: login,
+      password: password
+    });
+  }
+
+  logout() : Promise<any>{
+    return this.post('http://localhost:8000/api/logout/', {
+
     });
   }
   
