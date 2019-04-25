@@ -1,53 +1,58 @@
-<ng-container *ngIf="!logged"> 
-<div>
-  <div><input type="text" [(ngModel)]="login" /></div>
-  <div><input type="text" [(ngModel)]="password" /></div>
-  <div> <button (click)="auth()">Log in</button> </div>
-</div>
+<ng-container *ngIf="!isLogged">
+  <div>
+    <div>
+      <input class="lists" type="text" placeholder="Login" [(ngModel)]="login"/>
+    </div>
+    <div>
+      <input class="lists" type="password" placeholder="Password" [(ngModel)]="password"/>
+    </div>
+    <div>
+      <button class="btn" (click)="auth()">Log in</button>
+    </div>
+  </div>
 </ng-container>
 
-
-<ng-container *ngIf="logged">
-  CREATE TaskLists
+<ng-container *ngIf="isLogged">
+  <p class="text">To create new TaskList write the name below:</p>
   <div>
-    <input type="text" [(ngModel)]="name" />
-    <button (click) = "createTaskList()" >Create</button>
+    <input class="lists" type="text" [(ngModel)]="name" />
+    <button class="btn1" (click) = "createTaskList()" >Create TaskList</button>
   </div>
 
 
-
-  TaskLists
+  <p class="text">TaskLists:</p>
 
   <ng-container *ngIf="!loading">
-  Loading...
+  <p class="text">Loading...</p>
+  
   </ng-container>
 
   <ng-container *ngIf ="loading">
     <div>
         <div *ngFor = "let l of task_lists">
             <span (click) = "getListOfTasks(l)" >
-              <input type="text" [(ngModel)] = "l.name">  
+              <input class="lists" type="text" [(ngModel)] = "l.name">  
             </span>
-            <span style="color: brown; font-size: 20px" (click) = "deleteTaskList(l)" > DELETE</span>
-            <span style="color: green; font-size: 20px" (click) = "updateTaskList(l)" > EDIT</span>
-            <span style="color:blueviolet;font-size: 20px" (click)="getListOfTasks(l)"> TASKS</span>
+            <span class="delete" (click) = "deleteTaskList(l)" > DELETE</span>
+            <span class="edit" (click) = "updateTaskList(l)" > EDIT</span>
+            <span class="show" (click)="getListOfTasks(l)"> TASKS</span>
             
           </div>
     </div> 
   </ng-container>
     
   <br>
-
-  Tasks:
+  <p class="text">Tasks:</p>
 
   <div>
-    <div *ngFor="let p of tasks"> 
-      <h2>{{p.name}}</h2>
+    <div *ngFor="let t of tasks"> 
+      <input class="lists" type="text" [(ngModel)] = "t.name">
+      <br>
     </div>
   </div>
-
+  <br>
   <div>
-    <button (click)="logout()"> log out</button>
+    <button class="btn" (click)="logout()">Log out</button>
   </div>
-  
+
 </ng-container>

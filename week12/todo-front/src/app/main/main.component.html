@@ -1,12 +1,12 @@
-CREATE TaskLists
+CREATE TaskLists: Write a name
 <div>
   <input type="text" [(ngModel)]="name" />
-  <button (click) = "createTaskList()" >Create</button>
+  <button (click) = "createTaskList()" >Create TaskList</button>
 </div>
 
 
 
-TaskLists
+TaskLists:
 
 <ng-container *ngIf="!loading">
 Loading...
@@ -18,9 +18,9 @@ Loading...
           <span (click) = "getListOfTasks(l)" >
             <input type="text" [(ngModel)] = "l.name">  
           </span>
-          <span style="color: brown; font-size: 20px" (click) = "deleteTaskList(l)" > DELETE</span>
-          <span style="color: green; font-size: 20px" (click) = "updateTaskList(l)" > EDIT</span>
-          <span style="color:blueviolet;font-size: 20px" (click)="getListOfTasks(l)"> TASKS</span>
+          <span style="color: red; font-size: 40px" (click) = "deleteTaskList(l)" > DELETE</span>
+          <span style="color: green; font-size: 40px" (click) = "updateTaskList(l)" > EDIT</span>
+          <span style="color: blue;font-size: 40px" (click)="getListOfTasks(l)"> TASKS</span>
           
         </div>
   </div> 
@@ -31,7 +31,8 @@ Loading...
 Tasks:
 
 <div>
-  <div *ngFor="let p of tasks"> 
-    <h2>{{p.name}}</h2>
+  <div *ngFor="let t of tasks"> 
+    <input type="text" [(ngModel)] = "t.name">
+    <br>
   </div>
 </div>

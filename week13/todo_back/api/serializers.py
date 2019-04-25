@@ -1,11 +1,17 @@
 from rest_framework import serializers
+from .models import TaskList, Task
 from django.contrib.auth.models import User
-from api.models import TaskList, Task
+
+class UserSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ('id', 'username', 'email')
 
 
 class TaskListSerializer(serializers.Serializer):
     id = serializers.IntegerField(read_only=True)
     name = serializers.CharField(required=True)
+    created_by = UserSerializer(read_only=True)
 
     def create(self, validated_data):
         task_list = TaskList(**validated_data)
@@ -21,31 +27,17 @@ class TaskListSerializer(serializers.Serializer):
 class TaskListSerializer2(serializers.ModelSerializer):
     id = serializers.IntegerField(read_only=True)
     name = serializers.CharField(required=True)
+    created_by = UserSerializer(read_only=True)
 
     class Meta:
         model = TaskList
-        fields = ('id', 'name')
+        fields = ('id', 'name', 'created_by')
 
-class UserSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = User
-        fields = ('id', 'username', 'email')
-        # fields ='__all__'
 
-class TasksSerializer(serializers.Serializer):
+class TasksSerializer2(serializers.Serializer):
     id = serializers.IntegerField(read_only=True)
     name = serializers.CharField(required=True)
-    created_at = serializers.DateTimeField()
-    due_on = serializers.DateTimeField()
-    status = serializers.CharField()
-    task_list = serializers.CharField()
 
-    def create(self, validated_data):
-        task = Task(**validated_data)
-        task.save()
-        return task
-
-    def update(self, instance, validated_data):
-        instance.name = validated_data.get('name', instance.name)
-        instance.save()
-        return instance
+    class Meta:
+        model = Task
+        fields = '__all__'

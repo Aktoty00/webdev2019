@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
 from django.http import JsonResponse
 import json
-from api.serializers import TaskListSerializer, TaskListSerializer2, TasksSerializer
+from api.serializers import TaskListSerializer, TaskListSerializer2, TasksSerializer2
 from api.models import TaskList, Task
 
 
@@ -23,9 +23,9 @@ def task_list(request):
 
 
 @csrf_exempt
-def task_lists_num(request, num):
+def task_lists_num(request, pk):
     try:
-        task_list = TaskList.objects.get(id=num)
+        task_list = TaskList.objects.get(id=pk)
     except TaskList.DoesNotExist as e:
         return JsonResponse({'error': str(e)})
 
@@ -44,12 +44,12 @@ def task_lists_num(request, num):
         return JsonResponse({}, status=204)
 
 
-def task_lists_num_tasks(request, num):
+def task_lists_num_tasks(request, pk):
     try:
-        task_list = TaskList.objects.get(id=num)
+        task_list = TaskList.objects.get(id=pk)
     except TaskList.DoesNotExist as e:
         return JsonResponse({'error': str(e)})
 
     tasks = task_list.task_set.all()
-    serializer = TasksSerializer(tasks, many=True)
+    serializer = TasksSerializer2(tasks, many=True)
     return JsonResponse(serializer.data, safe=False)
